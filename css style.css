@@ -1,3 +1,20 @@
 p {
+    border: 3px solid blue;
+    border-radius: 5px;
+    padding: 5px;
     color: blue;
+    
+}
+
+h1 {
+    color: rgb(30, 88, 235);
+    border: 3px solid rgb(245, 126, 7);
+    border-radius: 10px;
+    padding: 5px;
+    text-shadow: 2px 2px yellow;
+}
+
+body {
+    background-color: rgb(129, 231, 151);
+    
 }
