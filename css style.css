@@ -1,13 +1,42 @@
 .Panda {
-    text-align: center;
-    padding-top: 50 px;
+    /*use display element before using justidy-item and align-items*/
+    display: flex;
+    align-items: center;
+    height: 200px;
+}
+    
+.Panda_image {
+    border-radius: 8px;
+    max-width: 300px;
+    /*the image follow the page sizing and no stretching*/
+    object-fit: cover;
 }
 
-p {
-    border: 3px solid blue;
-    border-radius: 5px;
-    padding: 5px;
-    color: blue;
+.Panda_textbox {
+    /*flex:1 will get the leftover space*/
+    display: flex;
+    flex-direction: column; /*make sure the description below the question*/
+    justify-content: space-between;
+    max-height: 100%;
+    margin:50px;
+    flex: 1;
+}
+
+.Panda_teen {
+    border-radius: 8px;
+    max-width: 300px;
+    /*the image follow the page sizing and no stretching*/
+    object-fit: cover;
+}
+
+.Panda_teen_textbox {
+    /*flex:1 will get the leftover space*/
+    display: flex;
+    flex-direction: column; /*make sure the description below the question*/
+    justify-content: space-between;
+    max-height: 100%;
+    margin:50px;
+    flex: 1;
 }
 
 h1 {
@@ -22,6 +51,6 @@ h1 {
 
 body {
     background-color: rgb(129, 231, 151);
-    
+    padding: 50px;
 }
 
